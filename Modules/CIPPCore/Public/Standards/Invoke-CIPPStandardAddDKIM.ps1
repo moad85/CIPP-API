@@ -87,6 +87,7 @@ function Invoke-CIPPStandardAddDKIM {
         '*.msteams.8x8.com'
         '*.ucconnect.co.uk'
         '*.teams-sbc.dk'
+        '*.sipconnectcloud.com'
     )
 
     $AllDomains = ($BatchResults | Where-Object { $_.DomainName }).DomainName | ForEach-Object {
